@@ -264,7 +264,7 @@ li {
 .topics li {
   break-inside: avoid;
 }
-.partnerPics {
+.partner-pics {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -272,12 +272,40 @@ li {
   gap: 24px;
   margin: 0 0 16px;
 }
-.partnerPics img {
+.partner-pics img {
   display: block;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 88px;
+}
+.partner-about {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+.partner-about * {
+  margin: 4px 0;
+}
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px double var(--blue);
+  margin: 0 0 16px;
+}
+.projects-table th,
+.projects-table td {
+  border: 1px solid var(--blue);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.projects-table td {
+  font-size: 0.85rem;
+}
+.projects-table td:first-child {
+  font-weight: bold;
 }
 hr {
   border: 1px solid var(--blue-light);
